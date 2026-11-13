@@ -1,0 +1,52 @@
+<!--meta
+{"key":"contact","path":"/contact/","title":"Contact Kareem Parker Masonry | Hamilton, ON","description":"Call or text Kareem on (289) 816-1525 for brick, concrete and masonry repairs in Hamilton, Ontario. 232 Tragina Ave S, Hamilton, ON L8K 2Z8."}
+-->
+<section class="page-head">
+  <img src="/assets/img/brick-house.webp" alt="" width="1500" height="1000">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span aria-current="page">Contact</span></nav>
+    <h1>Get an estimate</h1>
+    <p class="lead">Call, text a photo of the damage, or send the form. Let me know your budget.</p>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container contact-layout">
+    <aside class="location-card reveal">
+      <h2 style="font-size:1.5rem">Contact Kareem</h2>
+      <ul class="info-list">
+        <li><span class="ic">{{icon:phone}}</span><div><small>Call</small><a href="{{site.phoneHref}}">{{site.phone}}</a></div></li>
+        <li><span class="ic">{{icon:chat}}</span><div><small>Text</small><a href="sms:+12898161525">Text a photo of the damage</a></div></li>
+        <li><span class="ic">{{icon:pin}}</span><div><small>Based at</small><a href="{{mapsLink}}" target="_blank" rel="noopener">232 Tragina Ave S<br>Hamilton, ON L8K 2Z8</a></div></li>
+        <li><span class="ic">{{icon:home}}</span><div><small>Areas covered</small><strong>Hamilton and surrounding area</strong></div></li>
+      </ul>
+      <a href="{{site.phoneHref}}" class="btn btn-white btn-block">{{icon:phone}}<span>Call now</span></a>
+    </aside>
+    <div class="contact-form-card reveal">
+      <h2 style="font-size:1.5rem">Request an estimate</h2>
+      <p style="color:var(--muted)">Fields marked <span style="color:var(--danger)">*</span> are required. When you press send, your message opens in WhatsApp ready to go, or you can send it as a text.</p>
+      <form id="quote-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="name">Full name <span class="req">*</span></label><input id="name" name="name" type="text" autocomplete="name" required maxlength="80"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="phone">Phone <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="(905) 555-0123"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="service">Service</label><select id="service" name="service"><option value="">Not sure yet</option>{{serviceOptions}}</select></div>
+          <div class="field full"><label for="postcode">Postal code or area</label><input id="postcode" name="postcode" type="text" autocomplete="postal-code" maxlength="20" placeholder="L8K … or Stoney Creek"></div>
+          <div class="field full"><label for="message">What needs fixing? (and your budget, if you like) <span class="req">*</span></label><textarea id="message" name="message" required maxlength="2000" placeholder="E.g. Crack along the driveway and two front steps crumbling. Budget around $800."></textarea><span class="err" role="alert"></span></div>
+          <div class="hp" aria-hidden="true"><label for="_honey">Leave this empty</label><input id="_honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+        </div>
+        <div class="form-foot">
+          <small data-form-note>I only use your details to reply to your request.</small>
+          <button type="submit" class="btn btn-primary"><span class="spinner" aria-hidden="true"></span><span>Send request</span><span class="btn-label-icon">{{icon:send}}</span></button>
+        </div>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="map-frame reveal"><iframe title="Map showing 232 Tragina Ave S, Hamilton, ON" src="https://maps.google.com/maps?q=232%20Tragina%20Ave%20S%2C%20Hamilton%2C%20ON%20L8K%202Z8&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  </div>
+</section>
